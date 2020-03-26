@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ex.ex1.dao.IstoreMapper">
+<insert id="insert_istore" parameterType="istore">
+insert into 
+		istores(
+			insta_id
+			,store_no
+			,profile_img
+			)
+			values(
+			   #{insta_id}	
+			  ,#{store_no}	
+			  ,#{profile_img}	
+			)
+</insert>
+<insert id="insert_istore_info" parameterType="istore_info">
+insert into 
+		istores_info(
+			info_no
+			,insta_id
+			,info_img
+			)
+			values(
+			  ,istores_info_seq.nextval	
+			  ,#{insta_id}	
+			  ,#{info_img}
+			)	
+</insert>
+</mapper>

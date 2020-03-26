@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.ex.ex1.vo.Store" alias="store"/>
+		<typeAlias type="com.ex.ex1.vo.Istores" alias="istore"/>
+		<typeAlias type="com.ex.ex1.vo.Istores_info" alias="istore_info"/>
+	</typeAliases>
+	
+	
+	<mappers>
+		<mapper resource="mapper/istoreMapper.xml"/>
+	</mappers>
+</configuration>
